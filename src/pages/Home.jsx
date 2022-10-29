@@ -5,6 +5,7 @@ import MultiChain from "../components/elements/MultiChain";
 import Sale from "../components/elements/Sale";
 import Tokenomics from "../components/elements/Tokenomics";
 import FAQs from "../components/elements/FAQs";
+import Roadmap from "../components/elements/Roadmap";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MultiChain />
       <Sale />
       <Tokenomics />
+      {/* <Roadmap /> */}
       <FAQs />
     </>
   );

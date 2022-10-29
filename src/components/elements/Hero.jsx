@@ -97,9 +97,10 @@ function Hero() {
           </Col>
         </Row>
       </Container>
-      {/* <img className="h-img h-img-1" src="" alt="" />
-      <img className="h-img h-img-2" src="" alt="" />
-      <img className="h-img h-img-3" src="" alt="" /> */}
+      <div className="imgs">
+        <img className="h-img h-img-1" src="assets/hm-1.png" alt="" />
+        <img className="h-img h-img-2" src="assets/hm-2.png" alt="" />
+      </div>
     </div>
   );
 }
