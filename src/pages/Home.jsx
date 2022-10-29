@@ -1,9 +1,12 @@
 // componenets
+import Hero from "../components/elements/Hero";
+import Intro from "../components/elements/Intro";
 
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <Hero />
+      <Intro />
     </>
   );
 }
