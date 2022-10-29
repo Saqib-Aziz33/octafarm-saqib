@@ -66,6 +66,10 @@ a{
 .hero{
     position: relative;
     z-index: 2;
+    background-image: url('./media/grad.svg');
+    background-position: -80% 10%;
+    background-size: 800px;
+    background-repeat: no-repeat;
     iframe{
         z-index: 2;
     }
@@ -107,10 +111,13 @@ a{
                 }
             }
     }
-    @media only screen and (max-width: 700px){
-        .imgs{
-            display: none;
-        }
+}
+@media only screen and (max-width: 800px){
+    .hero{
+        background-image: unset;
+    }
+    .imgs{
+        display: none;
     }
 }
 
@@ -220,35 +227,84 @@ a{
         }
     }
 }
+
 .roadmap{
-    overflow-x: hidden;
-    position: relative;
-    background-image: url('./media/blocks.svg');
-    background-size: cover;
+    background-image: url('./media/grad.svg');
+    background-size: 500px;
     background-repeat: no-repeat;
-    background-position: center;
-    &:before{
-            background-image: url('./media/grad.svg');
-                content: "";
-                width: 1450px;
-                display: block;
-                height: 850px;
-                position: absolute;
-                z-index: 1;
-                background-position: 50%;
-                background-repeat: no-repeat;
-                background-size: contain;
-                z-index: 0;
-                top: -180px;
-                left: -900px;
+    background-position: -20% center;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        display: none;
     }
-    .dot-grid-graphic{
-            position: absolute;
-                top: 0;
-                left: -webkit-calc(50% - 75rem);
-                left: calc(50% - 75rem);
-                z-index: 1;
-                opacity: .2;
+    .wrapper{
+        background-image: url('./media/blocks.svg');
+        height: 400px;
+        gap: 0.2rem;
+        align-items: center;
+        display: flex;
+        width: 2000px;
+        .bar {
+                height: 2px;
+                width: 400px;
+                background-color: $clr-secondary;
+            }
+        
+            .node {
+                position: relative;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: $clr-secondary;
+            }
+        
+            .bar:nth-of-type(1) {
+                width: 200px;
+                background-color: $clr-primary;
+            }
+            .node:nth-of-type(2) {
+                background-color: $clr-primary;
+            }
+
+            .content{
+                position: absolute;
+                height: 110px;
+                border-left: 2px dashed $clr-primary;
+                left: 6px;
+                top: -110px;
+                padding-left: 1rem;
+                width: 250px;
+                .heading{
+                    position: absolute;
+                    top: -30px;
+                    left: -10px;
+                }
+                ul{
+                    color: $clr-primary;
+                    list-style-type: none;
+                    li::before{
+                        content: '- ';
+                    }
+                }
+
+
+                &.second{
+                    top: 20px;
+                    .heading{
+                        top: 110px;
+                    }
+                    ul{
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                    }
+                }
+            }
+    }
+}
+@media only screen and (max-width: 600px){
+    .roadmap{
+        display: none;
     }
 }
 

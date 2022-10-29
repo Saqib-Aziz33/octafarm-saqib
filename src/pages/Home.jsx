@@ -15,7 +15,7 @@ function Home() {
       <MultiChain />
       <Sale />
       <Tokenomics />
-      {/* <Roadmap /> */}
+      <Roadmap />
       <FAQs />
     </>
   );
