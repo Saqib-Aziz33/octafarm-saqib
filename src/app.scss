@@ -133,10 +133,34 @@ a{
     }
 }
 
+.faqs{
+    .accordion{
+        --bs-accordion-btn-focus-box-shadow: unset;
+    }
+    .accordion-item{
+        margin-bottom: 1rem;
+        background-color: #1f2947;
+        color: #fff;
+        border-radius: 0 !important;
+        border: unset;
+        button{
+            color: white;
+            background-color: #1f2947;
+            border: unset !important;
+        }
+        .accordion-button::after{
+            filter:brightness(0) invert(1);
+        }
+    }
+}
+
 
 // *************************** overrides ***************************
 .text-primary{
     color: $clr-primary !important;
+}
+.text-secondary {
+    color: $clr-secondary !important;
 }
 
 

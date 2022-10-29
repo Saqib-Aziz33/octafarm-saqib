@@ -2,6 +2,7 @@
 import Hero from "../components/elements/Hero";
 import Intro from "../components/elements/Intro";
 import MultiChain from "../components/elements/MultiChain";
+import FAQs from "../components/elements/FAQs";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <Intro />
       <MultiChain />
+      <FAQs />
     </>
   );
 }
