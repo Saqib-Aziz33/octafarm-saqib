@@ -2,8 +2,9 @@
 import Hero from "../components/elements/Hero";
 import Intro from "../components/elements/Intro";
 import MultiChain from "../components/elements/MultiChain";
-import FAQs from "../components/elements/FAQs";
 import Sale from "../components/elements/Sale";
+import Tokenomics from "../components/elements/Tokenomics";
+import FAQs from "../components/elements/FAQs";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Intro />
       <MultiChain />
       <Sale />
+      <Tokenomics />
       <FAQs />
     </>
   );

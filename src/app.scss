@@ -179,6 +179,23 @@ a{
     }
 }
 
+.tokenomics{
+    .waves-bg{
+        background-image: url('./media/waves.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .crd{
+        background: -webkit-linear-gradient(319.97deg, #00304b 27.17%, #1f2947 85.87%);
+        padding: 2rem;
+        border-radius: 10px;
+        &:hover{
+            background: -webkit-linear-gradient(319.97deg,#1f2947  27.17%, #00304b 85.87%);
+        }
+    }
+}
+
+
 // *************************** overrides ***************************
 .text-primary{
     color: $clr-primary !important;
@@ -214,4 +231,7 @@ a{
 }
 .txt-primary{
     color: #6fffe9;
+}
+.txt-shadow{
+    text-shadow: 1px 1px 2px #6fffe9;
 }
