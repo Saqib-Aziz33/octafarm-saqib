@@ -32,6 +32,7 @@ a{
 }
 
 .footer{
+    background-color: #080e21;
     .heading{
         text-transform: uppercase;
         font-size: 0.8rem;
@@ -154,6 +155,29 @@ a{
     }
 }
 
+.sale{
+    .crd{
+        position: relative;
+        background-color: #1e2947;
+        padding: 1rem;
+        border-radius: 5px;
+        .bdg{
+            position: absolute;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            background-color: $clr-primary;
+            color: black;
+            padding: 0 0.5rem;
+            left: -10px;
+            top: 20px;
+            transform: rotate(-45deg);
+            &.red{
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+}
 
 // *************************** overrides ***************************
 .text-primary{

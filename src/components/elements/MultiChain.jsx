@@ -3,7 +3,7 @@ import MultiChainContent from "./MultiChainContent";
 
 function MultiChain() {
   return (
-    <div className="multichain my-5">
+    <div className="multichain my-5 pt-5">
       <Container className="text-center">
         <h4 className="txt-primary">EASIEST GATEWAY TO</h4>
         <h1>Cross-Chain Yield Farming For All</h1>
