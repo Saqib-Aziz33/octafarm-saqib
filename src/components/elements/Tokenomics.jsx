@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import TokenChart from "./TokenChart";
 
 const cardData = [
   {
@@ -65,7 +66,8 @@ function Tokenomics() {
               md={6}
               className="mb-4 d-flex align-items-center justify-content-around"
             >
-              <img src="assets/chart.png" width="200px" alt="" />
+              {/* <img src="assets/chart.png" width="200px" alt="" /> */}
+              <TokenChart />
             </Col>
             <Col md={6} className="mb-4">
               <img src="assets/token.png" className="img-fluid" alt="" />

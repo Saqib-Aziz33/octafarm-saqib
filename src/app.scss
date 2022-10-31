@@ -213,6 +213,21 @@ a{
 }
 
 .tokenomics{
+    // chart
+    rect{
+        fill: transparent;
+    }
+    Circle{
+        fill: $clr-primary;
+    }
+    text{
+        fill: white !important;
+    }
+    path{
+        fill: $clr-primary;
+    }
+
+
     .waves-bg{
         background-image: url('./media/waves.svg');
         background-size: cover;
